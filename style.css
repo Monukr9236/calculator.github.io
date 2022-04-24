@@ -1,0 +1,151 @@
+* {
+    font-family: 'Merriweather Sans';
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+.button:hover{
+    background-color: aqua;
+    color: black;
+}
+.main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-image: linear-gradient(to right bottom, #051937, #4a275a, #962a61, #d2414a, #eb7912);
+}
+.main2{
+    padding-top: 50px;
+}
+.main #para{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    margin: auto;
+    background-color: #c161a17b;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.display-box {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #dcdbe1;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 65%;
+}
+
+.button {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #bc8585;
+    color: white;
+    border: solid black 0.5px;
+    border: 1.5px solid black;
+    width: 100%;
+    border-radius: 5px;
+    height: 70%;
+    outline: none;
+}
+
+.button:active {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+}
+#mks{
+    font-size: 25px;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    animation-name: mks;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    text-shadow: 0px 5px 30px aqua;
+    padding-top:80px;
+    animation-direction: alternate-reverse;
+}
+@keyframes mks {
+    0%{font-size: 25px;}
+    50%{font-size: 28px;}
+    100%{font-size: 30px;}
+}
+#plus{
+    color: white;
+    position: absolute;
+    font-size: 100px;
+    opacity: 0.4;
+    animation-name: plus;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes plus {
+    0%{top: 0px;left: 0px;}
+    50%{top: 300px;left: 100px;}
+    100%{top: 600px;left: 200px;}
+}
+#minus{
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: 100px;
+    opacity: 0.4;
+    animation-name: minus;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 0;
+}
+@keyframes minus {
+    0%{bottom: 0px;left: 0px;color: white;opacity: 0.4;}
+    50%{bottom: 0px;left: 200px;color: white;opacity: 0.4;}
+    51%{bottom: 0px;left:201px;color: greenyellow;opacity: 1;}
+    100%{bottom: 0px;left: 2000px;}
+}
+#devide{
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 230px;
+    font-size: 100px;
+    opacity: 0.4;
+    animation-name: devide;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes devide {
+    0%{bottom: 0px;right:230px;}
+    50%{bottom: 300px;right: 330px;}
+    100%{bottom: 600px;right: 430px;}
+}
+#multi{
+    color: white;
+    position: absolute;
+    top:400px;
+    right:180px;
+    font-size: 100px;
+    opacity: 0.4;
+    animation-name: multi;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes multi {
+    0%{top: 400px;right:180px;}
+    50%{top: 400px;right:980px;}
+    100%{top: 400px;right:1580px;}
+}
